@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Food Ordering Application</title>
+    <style>*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html,body{
+line-height:1.4;
+font-weight:300;
+font-family:sanserif;
+}
+.nav_container{
+display:flex;
+justify-content: space-between;
+align-items:center;
+
+}
+.container{
+max-width:1200px;
+margin:0px;
+}
+nav{
+box-shadow:5px 5px 5px rgba(1,1,1,0.05);
+position:sticky;
+top:0;
+margin-bottom:32px;
+background:white;
+padding:10px;
+z-index:50;
+display:flex;
+flex-direction:column;
+}
+.hero{ 
+display: flex;
+  gap=100px;
+  justify-content: center;
+  align-items:center;
+}
+.hero_content{
+  display:flex;
+  flex-direction:column;
+}
+.tag{
+  background-color:green;
+  color:white;
+  align-self: flex-start;
+  border-radius:7px;
+  }
+  .hero_content h1{
+    font-size:72px;
+    line-height:1.2;
+    font-weight:400px;
+  }
+  button{
+    padding:10px 15px;
+    border:none;
+    transition:0.2 ease-in-out;
+    background-color:orange;
+  }
+  button:hover{
+    opacity:0.5;
+    transition:0.2s ease-in-out;
+  }
+ .button_container{
+   align-self:flex-start;
+ }
+ .features{
+   margin-top:100px;
+   display:flex;
+   gap:20px;
+   justify-contnet: center;
+ }
+ .feature{
+   display:flex;
+   flex-direction:column;
+   gap:20px;
+ }
+ .feature img{
+   width:72px;
+   justify-content:center;
+   border-radius:80%;
+           border:1px solid black;
+ }
+.feature:hover{
+  transition:0.2s ease-in-out;
+  box-shadow:5px 5px 5px rgba(1,1,1,0.5);
+} 
+.menu{
+  display:flex;
+  flex-direction:column;
+  gap:50px;
+  margin:50px;
+  align-items:center; 
+}
+.menu.tag{
+  align-self:center;
+} 
+.grid{
+  display: grid;
+gap:30px;
+  grid-template-areas:
+"I1 I5 I6"
+"I2 I3 I7"
+"I8 I4 I4"
+"I8 I4 I4";
+}
+.item1{
+  grid-area: I1;
+} 
+.item2{
+  grid-area: I2;
+} 
+.item3{
+  grid-area: I3;
+} 
+.item4{
+  grid-area: I4;
+} 
+.item5{
+  grid-area: I5;
+}
+ .item6{
+  grid-area: I6;
+}
+ .item7{
+  grid-area: I7;
+} 
+.item8{
+  grid-area: I8;
+} 
+.grid-image{
+  border-radius:10px;
+}
+  .grid_image:hover{
+    transform:scale(1.05);
+    transition:0.2 ease-in-out;
+}
+footer{
+  background-color:#fff0db;
+}
+.footer_container{
+  padding:30px;
+  display:flex;
+  justify-content:space-between;
+}
+ @media(max-width :786px){
+   .hero{
+     flex-direction:column;
+   }
+   .hero_img{
+     display:flex;
+     justify-content:center;
+   }
+   .hero_img img{
+     width:80%;
+     }
+     .hero_content{
+       font-size:25px;
+     }
+     .features{
+       flex-direction:column;
+       justify-content:center;
+        border-radius:100%;
+        border:1px solid black;
+     }
+     .grid{
+       padding:10px;
+       width:100px;
+       }
+       .grid_img{
+         border-radius:0px;
+       }
+       .footer_container{
+         flex-direction:column;
+       }</style>
+    <script src="https://kit.fontawesome.com/672ff4553c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <nav>
+  <div class="nav_container">
+  <div class="logo_container">
+  <img src="https://i.ibb.co/qM8xmTdM/Screenshot-20250616-124001-Chrome.jpg" width="50px" style="border-radius:50%">
+  </div>
+  <div class="bar_icon">
+  <i class="fa-solid fa-bars"></i>
+  </div></div>
+  </nav>
+ <div class="hero">
+ <div class="hero_img">
+ <img src="https://i.ibb.co/S7KNTLf3/Screenshot-20250616-160220-Google.jpg" width="100px"style="border-radius:80%"/>
+ </div>
+<div class="hero_content"> 
+<div class="tag">50%off on all items</div>
+<h1>Enjoy Your Meal!</h1>
+<p>"Every bite is packed with flavor, freshness, and the kind of quality that keeps you coming back. Taste the difference – it's food made to satisfy."</p>
+<button class="button_container">Explore Now</button> 
+ </div>
+ <section calss="features">
+ <div class="feature">
+ <img src="https://i.ibb.co/4RHKMjyh/Screenshot-20250616-171333-Chrome.jpg" alt="discount"/>
+ <div class="feature_content">
+ <h3>Discount Voucher</h3>
+ </div>
+ </div>
+ <div class="feature">
+ <img src="https://i.ibb.co/BKdsrDxr/Screenshot-20250616-174634-Chrome.jpg" alt="health"/>
+ <div class="feature_content">
+ <h3>Healthy Food</h3>
+ </div>
+ </div>
+ <div class="feature">
+ <img src="https://i.ibb.co/jP1s6Hcq/Screenshot-20250616-174337-Chrome.jpg" alt="Delivery"/>
+ <div class="feature_content">
+ <h3>Express Delivery</h3>
+ </div>
+ </div>
+ </section>
+         <div class="divider"></div>
+ <div class="menu">
+ <div class="tag">Our Menu</div>
+ <h2>Explore Our Menu</h2>
+ <div class="grid">
+ <div class="item1">
+ <img class="grid_img1" src="https://i.ibb.co/dJ3Xx6v6/Screenshot-20250616-184144-Chrome.jpg" alt=""/>
+</div> 
+ <div class="item2">
+ <img class="grid_img2" src="https://i.ibb.co/NdG34Qbq/Screenshot-20250616-184241-Chrome.jpg" alt=""/>
+ </div>
+ <div class="item3">
+ <img class="grid_img3" src="https://i.ibb.co/7dNK7Qbj/Screenshot-20250616-183903-Chrome.jpg" alt=""/>
+</div>
+ <div class="item4">
+ <img class="grid_img4" src="https://i.ibb.co/C3J9BD6z/Screenshot-20250616-184024-Chrome.jpg" alt=""/>
+ </div>
+ <div class="item5">
+ <img class="grid_img5" src="https://i.ibb.co/3yzzGK37/Screenshot-20250616-203547-Chrome.jpg" alt=""/>
+ </div>
+ <div class="item6">
+ <img class="grid_img6" src="https://i.ibb.co/6JZBCr9H/Screenshot-20250616-204018-Chrome.jpg" alt=""/>
+ </div>
+ <div class="item7">
+ <img class="grid_img7" src="https://i.ibb.co/xqWZc9bv/Screenshot-20250616-204317-Chrome.jpg" alt=""/>
+ </div>
+ <div class="item8">
+ <img class="grid_img8" src="https://i.ibb.co/sdhwsN5t/Screenshot-20250616-204717-Chrome.jpg" alt=""/>
+</div>
+</div>
+</div>
+<footer>
+<div class="footer_container container">
+<div class="footer_logo">
+<img src="https://i.ibb.co/qM8xmTdM/Screenshot-20250616-124001-Chrome.jpg" width="50px" style="border-radius:50%"/>
+</div>
+<div class="link_list">
+<h3>Features</h3>
+<ul>
+<li>Order tracking</li>
+<li>New order</li>
+<li>Contact US</li>
+<li>News&blogs</li>
+</ul>
+<h3>Suppourt</h3>
+<ul>
+<li>About Us</li>
+<li>Privacy policy</li>
+<li>Terms&Conditions</li>
+</ul>
+</div>
+</div>
+</footer>
+</body>
+</html>
