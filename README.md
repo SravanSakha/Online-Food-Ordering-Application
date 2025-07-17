@@ -2,4 +2,4 @@
 ## Website link 
 ---
 ### Link:
-https://app.netlify.com/projects/cosmic-daifuku-5f0c0e/deploys/
+https://cosmic-daifuku-5f0c0e.netlify.app/
